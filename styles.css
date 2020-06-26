@@ -1,0 +1,178 @@
+/* || GENERAL */
+/* -->  a */
+/* -->  h1 */
+/* -->  h2 */
+/* --> footer */
+/* || TABS */
+/* -->  .tabs-wrapper */
+/* -->  .clearfix:before,clearfix:after */
+/* -->  .clearfix:after */
+/* -->  .mb-50 */
+/* -->  ul-switch-tabs-nav */
+/* -->  ul-switch-tabs-nav li */
+/* -->  ul-switch-tabs-nav li a */
+/* -->  ul.switch-tabs-nav li a:hover, ul.switch-tabs-nav li a:focus */
+/* -->  ul-switch-tabs-nav li.active */
+/* -->  ul-switch-tabs-nav li a.active */
+/* -->  ul.switch-tabs-nav.rtl.responsive li */
+/* -->  ul.switch-tabs-nav.responsive li */
+/* || CONTENT */
+/* -->  .switch-tabs-body */
+/* -->  .switch-tabs-body .switch-content */
+/* || TYPE */
+/* -->  .type-input */
+/* -->  .input-type:focus */
+/* || DRAW */
+/* -->  canvas */
+/* FOR MOBILE */
+/* --> h1 */
+/* --> h2 */
+/* --> .switch-tabs */
+/* --> ul.switch-tabs-nav li a */
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+/* || GENERAL */
+a {
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+	color: blue;
+	font-size: 25px;
+}
+
+h2 {
+	text-align: center;
+	color: gray;
+	font-size: 20px;
+}
+footer {
+	padding: 40px 0;
+	text-align: center;
+	opacity: .5;
+	color: blue;
+}
+
+
+
+/* || TABS */
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.mb-50 {
+	margin-bottom: 50px !important;
+}
+
+.tabs-wrapper {
+	margin: 0 auto;
+	width:100%; 
+	display:block; 
+}
+
+ul.switch-tabs-nav {
+	display: table;
+	table-layout: fixed;
+	position: relative;
+	margin: auto;
+	width: 100%;
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.switch-tabs-nav li {
+    display: table-cell;
+    float: center;
+	line-height: 1em;
+	text-align: center;
+}
+
+ul.switch-tabs-nav li a {
+	display: block;
+	padding: 10px 10px;
+	font-size: 18px;
+	color: black;
+}
+
+ul.switch-tabs-nav li a:hover,
+ul.switch-tabs-nav li a:focus {
+	color: blue;
+}
+
+ul.switch-tabs-nav li.active {
+	background-color: #fff;
+	border-bottom: 2px solid blue;
+}
+
+ul.switch-tabs-nav li a.active {
+	color: blue;
+}
+
+ul.switch-tabs-nav.responsive li {
+	float: none;
+	display: block;
+}
+
+
+/* CONTENT */
+.switch-tabs-body {
+	position: relative;
+	padding: 30px 40px 20px 40px;
+	border: 1px solid #ddd;
+	border-top: 0.5px solid blue;
+}
+
+.switch-tabs-body .switch-content {
+	position: relative;
+	text-align: center;
+}
+
+
+/* TYPE */
+.type-input {
+	width: 100%;
+	border-width: 0px;
+	border: none;
+	outline: 0;
+	border-bottom: 0.25px solid gray;
+	text-align: center;
+	font-family: 'Satisfy', cursive;
+	font-size: 40px;
+}
+
+.input-type:focus {
+	outline: none!important;
+}
+
+/* DRAW */
+canvas {
+	position: relative;
+}
+
+/* FOR MOBILE */
+@media screen and (max-width: 650px) {
+	h1 {
+		font-size: 18px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+	
+	.switch-tabs{
+		position:relative;
+	}
+	
+	ul.switch-tabs-nav li a {
+		font-size: 15px;
+	}
+}
