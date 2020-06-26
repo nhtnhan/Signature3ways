@@ -24,7 +24,7 @@
 /* -->  .input-type:focus */
 /* || DRAW */
 /* -->  canvas */
-/* FOR MOBILE */
+/* || FOR MOBILE */
 /* --> h1 */
 /* --> h2 */
 /* --> .switch-tabs */
@@ -158,7 +158,7 @@ canvas {
 	position: relative;
 }
 
-/* FOR MOBILE */
+/* || FOR MOBILE */
 @media screen and (max-width: 650px) {
 	h1 {
 		font-size: 18px;
