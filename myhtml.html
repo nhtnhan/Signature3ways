@@ -10,44 +10,43 @@
     <link type="text/css" rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="title"></div>  
-    <h1>Create a Signature</h1>
-    <h2>Use one of the following ways to create your signature</h2>
-</div>
-<section class="tabs-wrapper">
-    <!-- 3 tabs: type, upload, draw -->
-    <div class="switch-tabs">
-        <ul class="switch-tabs-nav clearfix">
-            <li class="active"><a href="#type" class="active">Type</a></li>
-            <li><a href="#upload">Upload</a></li>
-            <li><a href="#draw">Draw</a></li>
-        </ul>
-        <!-- /.switch-tabs-nav -->
-        <div class="switch-tabs-body mb-50">
-            <!-- /first-content:type -->
-            <div id="type" class="switch-content">
-                <input type="text" id="type" name="type" placeholder="type here" class="type-input">
-            </div>
-            <!-- #type -->
-            <div id="upload" class="switch-content">
-                <input type="file" name="upload_file" id="fileToUpload" accept="image/jpeg,image/png">
-                Upload
-            </div>
-            <!-- #upload -->
-            <div id="draw" class="switch-content">
-                <canvas id="signature-pad" width="500" height="200"></canvas>
-                <br>
-                <button id="clear">Clear</button>
-            </div>
-            <!-- #draw -->
-        </div>
-        <!-- /.switch-tabs-body -->
+    <div class="title"></div>  
+        <h1>Create a Signature</h1>
+        <h2>Use one of the following ways to create your signature</h2>
     </div>
-    <!-- /.switch-tabs -->
-</section>
-<footer>by Nhan Nguyen</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
-<script type="text/javascript" src="myscripts.js"></script>
+    <section class="tabs-wrapper">
+        <div class="switch-tabs">
+            <ul class="switch-tabs-nav clearfix">
+                <li class="active"><a href="#type" class="active">Type</a></li>
+                <li><a href="#upload">Upload</a></li>
+                <li><a href="#draw">Draw</a></li>
+            </ul>
+            <!-- /.switch-tabs-nav -->
+            <div class="switch-tabs-body mb-50">
+                <!-- /first-content:type -->
+                <div id="type" class="switch-content">
+                    <input type="text" id="type" name="type" placeholder="type here" class="type-input">
+                </div>
+                <!-- #type -->
+                <div id="upload" class="switch-content">
+                    <input type="file" name="upload_file" id="fileToUpload" accept="image/jpeg,image/png">
+                    Upload
+                </div>
+                <!-- #upload -->
+                <div id="draw" class="switch-content">
+                    <canvas id="signature-pad" width="500" height="200"></canvas>
+                    <br>
+                    <button id="clear">Clear</button>
+                </div>
+                <!-- #draw -->
+            </div>
+            <!-- /.switch-tabs-body -->
+        </div>
+        <!-- /.switch-tabs -->
+    </section>
+    <footer>by Nhan Nguyen</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <script type="text/javascript" src="myscripts.js"></script>
 </body>  
 </html>
